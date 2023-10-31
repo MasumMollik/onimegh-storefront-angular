@@ -138,7 +138,7 @@ export class ProductListComponent implements OnInit {
                         term,
                         groupByProduct: true,
                         collectionId: collection?.id,
-                        facetValueFilters: facetValueIds.map(id => ({ and: id })),
+                        facetValueFilters: [{or: facetValueIds}]/*facetValueIds.map(id => ({ and: id }))*/,
                         take: perPage,
                         skip: this.currentPage * perPage,
                     },
