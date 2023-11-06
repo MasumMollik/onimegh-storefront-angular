@@ -45,7 +45,8 @@ export class ProductListControlsComponent implements OnChanges {
     }
 
     toggleFacetValueIdInRoute(id: string) {
-        this.router.navigate(['./', {
+        console.log(this.router.url);
+        this.router.navigate([this.router.url!=='/'?'./':'./search', {
             facets: this.toggleFacetValueId(id),
         }], {
             queryParamsHandling: 'merge',
