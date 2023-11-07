@@ -4,6 +4,7 @@ import { Apollo } from 'apollo-angular';
 import { DocumentNode } from 'graphql';
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
     providedIn: 'root',
@@ -14,7 +15,8 @@ export class DataService {
         headers: {},
     };
 
-    constructor(private apollo: Apollo) { }
+    constructor(private apollo: Apollo,
+                private http: HttpClient) { }
 
     query<T = any, V extends Record<string, any> = {}>(query: DocumentNode, variables?: V, fetchPolicy?: WatchQueryFetchPolicy): Observable<T> {
         return this.apollo.watchQuery<T, V>({
@@ -33,5 +35,17 @@ export class DataService {
             variables,
             context: this.context,
         }).pipe(map(response => response.data as T));
+    }
+
+    public getDistricts(): Observable<any> {
+        return this.http.get("./assets/locations/district.json");
+    }
+
+    public getUnions(): Observable<any> {
+        return this.http.get("./assets/locations/unions.json");
+    }
+
+    public getUpazillas(): Observable<any> {
+        return this.http.get("./assets/locations/upazilla.json");
     }
 }

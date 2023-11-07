@@ -1,7 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 
 import { AddressFragment, CountryFragment, OrderAddressFragment } from '../../../common/generated-types';
+import {DataService} from "../../../core/providers/data/data.service";
+import {take} from "rxjs/operators";
 
 @Component({
     selector: 'vsf-address-form',
@@ -9,13 +11,14 @@ import { AddressFragment, CountryFragment, OrderAddressFragment } from '../../..
     // styleUrls: ['./address-form.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AddressFormComponent implements OnChanges {
+export class AddressFormComponent implements OnInit, OnChanges {
 
     @Input() availableCountries: CountryFragment[];
     @Input() address: OrderAddressFragment | AddressFragment;
 
     addressForm: UntypedFormGroup;
-    constructor(private formBuilder: UntypedFormBuilder) {
+    constructor(private formBuilder: UntypedFormBuilder,
+                private dataService: DataService) {
         this.addressForm = this.formBuilder.group({
             fullName: '',
             company: '',
@@ -48,6 +51,26 @@ export class AddressFormComponent implements OnChanges {
                 }
             }
         }
+    }
+
+    ngOnInit(): void {
+        this.dataService.getDistricts()
+            .pipe(take(1))
+            .subscribe(data => {
+                console.log('Districts', data);
+            });
+
+        this.dataService.getUpazillas()
+            .pipe(take(1))
+            .subscribe(data => {
+                console.log('Upazillas', data);
+            });
+
+        this.dataService.getUnions()
+            .pipe(take(1))
+            .subscribe(data => {
+                console.log('Unions', data);
+            });
     }
 
 }
