@@ -6,6 +6,24 @@ import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import {HttpClient} from "@angular/common/http";
 
+
+export class District {
+    id: string;
+    division_id: string;
+    name: string;
+    bn_name: string;
+    lat: string;
+    lon: string;
+    url: string;
+}
+
+export class Upazilla {
+    id: string;
+    district_id: string;
+    name: string;
+    bn_name: string;
+    url: string;
+}
 @Injectable({
     providedIn: 'root',
 })
@@ -37,15 +55,15 @@ export class DataService {
         }).pipe(map(response => response.data as T));
     }
 
-    public getDistricts(): Observable<any> {
-        return this.http.get("./assets/locations/district.json");
+    public getDistricts(): Observable<District[]> {
+        return this.http.get<District[]>("./assets/locations/district.json");
     }
 
     public getUnions(): Observable<any> {
         return this.http.get("./assets/locations/unions.json");
     }
 
-    public getUpazillas(): Observable<any> {
-        return this.http.get("./assets/locations/upazilla.json");
+    public getUpazillas(): Observable<Upazilla[]> {
+        return this.http.get<Upazilla[]>("./assets/locations/upazilla.json");
     }
 }
