@@ -33,10 +33,16 @@
     </div>
 </div>
 <div class="max-w-6xl mx-auto px-4 pt-12">
-    <div class="box-content py-2 px-2 relative overflow-x-auto xl:overflow-visible">
+    <div class="box-content py-2 px-2 relative overflow-x-auto xl:overflow-auto">
         <div
-            class="grid justify-items-center grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:gap-x-8">
-            <vsf-collection-card *ngFor="let collection of collections$ | async"
+            class="flex justify-items-center sm:px-6 lg:px-8 xl:relative xl:px-0">
+            <vsf-collection-card class="max-w-[300px]
+             h-[120px] min-w-[120px] m-[8px]
+             sm:h-[140px] sm:min-w-[140px] sm:m-[12px]
+             md:h-[160px] md:min-w-[160px] md:m-[16px]
+             lg:h-[200px] lg:min-w-[200px] lg:m-[16px]
+             xl:h-[240px] xl:min-w-[240px] md:m-[20px]"
+                                 *ngFor="let collection of collections$ | async"
                                  [collection]="collection">
             </vsf-collection-card>
         </div>
