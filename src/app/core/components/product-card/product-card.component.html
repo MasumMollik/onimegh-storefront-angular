@@ -1,7 +1,8 @@
 <ng-template [ngIf]="product">
-    <a class="flex flex-col" prefetch='intent' [routerLink]="['/product', product.slug]">
+    <a class="flex flex-col h-full product-card-item" prefetch='intent' [routerLink]="['/product', product.slug]">
         <img
-            class="rounded-xl flex-grow object-cover aspect-[7/8]"
+            class="flex-grow object-cover aspect-[7/8]"
+            style="border-radius: 4px"
             alt=""
             [src]="product.productAsset | assetPreview:300:400"
         />

@@ -5,7 +5,7 @@ import { SearchProductsQuery } from '../../../common/generated-types';
 @Component({
     selector: 'vsf-product-card',
     templateUrl: './product-card.component.html',
-    // styleUrls: ['./product-card.component.scss'],
+    styleUrls: ['./product-card.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductCardComponent {
