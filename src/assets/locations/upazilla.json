@@ -492,5 +492,587 @@
   {"id":"491","district_id":"64","name":"Netrokona Sadar","bn_name":"নেত্রকোণা সদর","url":"netrokonasadar.netrokona.gov.bd"},
   {"id":"492","district_id":"9","name":"Eidgaon","bn_name":"ঈদগাঁও","url":"null"},
   {"id":"493","district_id":"39","name":"Madhyanagar","bn_name":"মধ্যনগর","url":"null"},
-  {"id":"494","district_id":"50","name":"Dasar","bn_name":"ডাসার","url":"null"}
+  {"id":"494","district_id":"50","name":"Dasar","bn_name":"ডাসার","url":"null"},
+  {
+    "id": 4001,
+    "name": "Uttara Model Town (Sector 1 to 10)",
+    "bn_name": "উত্তরা মডেল টাউন (১ হতে ১০ নাম্বার সেক্টর)",
+    "district_id": "4001",
+    "city_corporation": "Dhaka North City Corporation",
+    "city_corp_tag": "DNCC",
+    "ward": "1"
+  },
+    {
+      "id": 4002,
+      "name": "Abdullahpur",
+      "bn_name": "আব্দুল্লাহপুর",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4003,
+      "name": "Purakoir",
+      "bn_name": "পুরাকরৈ",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4004,
+      "name": "Shoilpur",
+      "bn_name": "শৈলপুর",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4005,
+      "name": "Faidabad",
+      "bn_name": "ফায়দাবাদ",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4006,
+      "name": "Bawnia",
+      "bn_name": "বাউনিয়া",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4007,
+      "name": "Dakshin Khan",
+      "bn_name": "দক্ষিণ খান",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4008,
+      "name": "Ranavola",
+      "bn_name": "রানাভোলা",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "1"
+    },
+    {
+      "id": 4009,
+      "name": "Mirpur 12",
+      "bn_name": "মিরপুর ১২",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "2"
+    },
+    {
+      "id": 4010,
+      "name": "Mirpur 9",
+      "bn_name": "মিরপুর ৯",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "2"
+    },
+    {
+      "id": 4011,
+      "name": "Burir Tek",
+      "bn_name": "বুড়ির টেক",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "2"
+    },
+    {
+      "id": 4012,
+      "name": "Kalshi Shorkar Bari",
+      "bn_name": "কালশী সরকার বাড়ী",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "2"
+    },
+    {
+      "id": 4013,
+      "name": "Shagufta",
+      "bn_name": "সাগুফতা",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "2"
+    },
+    {
+      "id": 4014,
+      "name": "Mirpur 10",
+      "bn_name": "মিরপুর ১০",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "3"
+    },
+    {
+      "id": 4015,
+      "name": "Mirpur 11",
+      "bn_name": "মিরপুর ১১",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "3"
+    },
+    {
+      "id": 4016,
+      "name": "Modina Nogor",
+      "bn_name": "মদিনা নগর",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "3"
+    },
+    {
+      "id": 4017,
+      "name": "Mirpur 13",
+      "bn_name": "মিরপুর ১৩",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4018,
+      "name": "Mirpur 13/A",
+      "bn_name": "মিরপুর ১৩/এ",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4019,
+      "name": "Mirpur 13/B",
+      "bn_name": "মিরপুর ১৩/বি",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4020,
+      "name": "Mirpur 13/C",
+      "bn_name": "মিরপুর ১৩/সি",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4021,
+      "name": "Tinshed, Mirpur 14",
+      "bn_name": "টিনসেড, ,মিরপুর ১৪",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4022,
+      "name": "Mirpur 14",
+      "bn_name": "মিরপুর ১৪",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4023,
+      "name": "Baishteki",
+      "bn_name": "বাইশটেকী",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4024,
+      "name": "Mirpur 15",
+      "bn_name": "মিরপুর ১৫",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "4"
+    },
+    {
+      "id": 4025,
+      "name": "Mirpur 11",
+      "bn_name": "মিরপুর ১১",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4026,
+      "name": "Mirpur 11 , Block A",
+      "bn_name": "মিরপুর ১১ , ব্লক এ",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4027,
+      "name": "Mirpur 11 , Block B",
+      "bn_name": "মিরপুর ১১ , ব্লক বি",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4028,
+      "name": "Mirpur 11 , Block C",
+      "bn_name": "মিরপুর ১১ , ব্লক সি",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4029,
+      "name": "Mirpur 11 , Block D",
+      "bn_name": "মিরপুর ১১ , ব্লক ডি",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4030,
+      "name": "Mirpur 11 , Block E",
+      "bn_name": "মিরপুর ১১ , ব্লক ই",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "id": 4031,
+      "name": "Mirpur 11 , Block F",
+      "bn_name": "মিরপুর ১১ , ব্লক এফ",
+      "district_id": "4001",
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5"
+    },
+    {
+      "area_name": {
+        "en": "Polashnogor",
+        "bn": "পলাশনগর"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "5",
+      "id": 4032
+    },
+    {
+      "area_name": {
+        "en": "Pallabi",
+        "bn": "পল্লবী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4033
+    },
+    {
+      "area_name": {
+        "en": "Pallabi Extended",
+        "bn": "বর্ধিত পল্লবী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4034
+    },
+    {
+      "area_name": {
+        "en": "Milkvita Road",
+        "bn": "মিল্কভিটা রোড"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4035
+    },
+    {
+      "area_name": {
+        "en": "Shujatnogor",
+        "bn": "সুজাতনগর"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4036
+    },
+    {
+      "area_name": {
+        "en": "Horunabad",
+        "bn": "হরুনাবাদ"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4037
+    },
+    {
+      "area_name": {
+        "en": "Mollika Housing",
+        "bn": "মল্লিকা হাউজিং"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4038
+    },
+    {
+      "area_name": {
+        "en": "Arifabad",
+        "bn": "আরিফাবাদ"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4039
+    },
+    {
+      "area_name": {
+        "en": "Chayanir",
+        "bn": "ছায়ানীড়"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4040
+    },
+    {
+      "area_name": {
+        "en": "Alubdi",
+        "bn": "আলু্ব্দী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4041
+    },
+    {
+      "area_name": {
+        "en": "Duaripara",
+        "bn": "দুয়ারীপাড়া"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4042
+    },
+    {
+      "area_name": {
+        "en": "Rupnagar Tinshed",
+        "bn": "রূপনগর টিনশেড"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4043
+    },
+    {
+      "area_name": {
+        "en": "Eastern Housing 2nd Part",
+        "bn": "ইষ্টান হাউজিং দ্বিতীয় পর্ব"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "6",
+      "id": 4044
+    },
+    {
+      "area_name": {
+        "en": "Mirpur 2",
+        "bn": "মিরপুর ২"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "7",
+      "id": 4045
+    },
+    {
+      "area_name": {
+        "en": "Rupnagar Residential Area",
+        "bn": "রূপরগর আবাসিক এলাকা"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "7",
+      "id": 4046
+    },
+    {
+      "area_name": {
+        "en": "Mirpur 7",
+        "bn": "মিরপুর ৭"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "7",
+      "id": 4047
+    },
+    {
+      "area_name": {
+        "en": "Mirpur 1",
+        "bn": "মিরপুর ১"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4048
+    },
+    {
+      "area_name": {
+        "en": "Wapda Colony",
+        "bn": "ওয়াপদা কলোণী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4049
+    },
+    {
+      "area_name": {
+        "en": "Al Kamal Housing",
+        "bn": "আল কামাল হাউজিং"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4050
+    },
+    {
+      "area_name": {
+        "en": "Zoo Residential Area",
+        "bn": "চিড়িয়াখানা আবাসিক এলাকা"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4051
+    },
+    {
+      "area_name": {
+        "en": "Nobaber Bagh",
+        "bn": "নবাবের বাগ"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4052
+    },
+    {
+      "area_name": {
+        "en": "Goran Chatbari",
+        "bn": "গোড়ান চটবাড়ী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4053
+    },
+    {
+      "area_name": {
+        "en": "BISF Staff Quarter",
+        "bn": "বি.আই.এস.এফ স্টাফ কোয়াটার"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4054
+    },
+    {
+      "area_name": {
+        "en": "Kumir Shah Majar",
+        "bn": "কুমীরশাহ মাজার"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4055
+    },
+    {
+      "area_name": {
+        "en": "Box Nogor",
+        "bn": "বক্স নগর"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4056
+    },
+    {
+      "area_name": {
+        "en": "Uttar Bishil",
+        "bn": "উত্তর বিশিল"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4057
+    },
+    {
+      "area_name": {
+        "en": "Priyanka Housing , Mirpur 1",
+        "bn": "প্রিয়াংকা হাউজিং , মিরপুর ১"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4058
+    },
+    {
+      "area_name": {
+        "en": "Botanical Garden Residential Area",
+        "bn": "বোটানিক্যাল গার্ডেন আবাসিক এলাকা"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "8",
+      "id": 4059
+    },
+    {
+      "area_name": {
+        "en": "Golartek",
+        "bn": "গোলারটেক"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "9",
+      "id": 4060
+    },
+    {
+      "area_name": {
+        "en": "Choto Diabari",
+        "bn": "ছোট দিয়াবাড়ী"
+      },
+      "city_corporation": "Dhaka North City Corporation",
+      "city_corp_tag": "DNCC",
+      "ward": "9",
+      "id": 4061
+    }
+
+
+
 ]
