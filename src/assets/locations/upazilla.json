@@ -3521,15 +3521,6 @@
     "ward": "null"
   },
   {
-    "id": 4008,
-    "name": "Agargaon-Taltola",
-    "bn_name": "আগারগাঁও-তালতলা",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
     "id": 4009,
     "name": "Amin Bazar",
     "bn_name": "আমিন বাজার",
@@ -3773,33 +3764,6 @@
     "ward": "null"
   },
   {
-    "id": 4046,
-    "name": "Benaroshi polli Blok A",
-    "bn_name": "বেনারসি পল্লী ব্লক এ",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4047,
-    "name": "Benaroshi polli Blok B,C",
-    "bn_name": "বেনারসি পল্লী ব্লক বি, সি",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4048,
-    "name": "Benaroshi polli Blok D",
-    "bn_name": "বেনারসি পল্লী ব্লক ডি",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
     "id": 4049,
     "name": "Beraid",
     "bn_name": "বেরইদ",
@@ -3809,63 +3773,9 @@
     "ward": "null"
   },
   {
-    "id": 4050,
-    "name": "Block A,B, Mirpur 6",
-    "bn_name": "ব্লক এ, বি, মিরপুর ৬",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4051,
-    "name": "Block A, C, Mirpur 11",
-    "bn_name": "ব্লক এ, সি, মিরপুর ১১",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4052,
-    "name": "Block B, D, Mirpur 11",
-    "bn_name": "ব্লক বি, ডি, মিরপুর ১১",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4053,
-    "name": "Block D,E , Mirpur 6",
-    "bn_name": "ব্লক ডি, ই, মিরপুর ৬",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4054,
-    "name": "Block-E, Mirpur 12",
-    "bn_name": "ব্লক-ই, মিরপুর ১২",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
     "id": 4055,
     "name": "Boro Moghbazar",
     "bn_name": "বড় মগবাজার",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4056,
-    "name": "Bulk Merchant",
-    "bn_name": "বাল্ক মার্চেন্ট",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -4484,54 +4394,9 @@
     "ward": "null"
   },
   {
-    "id": 4125,
-    "name": "lost",
-    "bn_name": "হারানো",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4126,
-    "name": "Love Road, Mirpur-2",
-    "bn_name": "লাভ রোড, মিরপুর-২",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
     "id": 4127,
-    "name": "Malibagh  Baganbari",
-    "bn_name": "মালিবাগ বাগানবাড়ি",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4128,
-    "name": "Malibagh College Road",
-    "bn_name": "মালিবাগ কলেজ রোড",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4129,
-    "name": "Malibagh Lane",
-    "bn_name": "মালিবাগ লেন",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4130,
-    "name": "Malibagh Pabna Colony",
-    "bn_name": "মালিবাগ পাবনা কলোনি",
+    "name": "Malibagh",
+    "bn_name": "মালিবাগ",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -4559,15 +4424,6 @@
     "id": 4133,
     "name": "Manik Nagar",
     "bn_name": "মানিক নগর",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4134,
-    "name": "Masjid Market, Mirpur 2",
-    "bn_name": "মসজিদ মার্কেট, মিরপুর ২",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -4611,134 +4467,8 @@
   },
   {
     "id": 4139,
-    "name": "Mirpur 1",
-    "bn_name": "মিরপুর ১",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4140,
-    "name": "Mirpur 10",
-    "bn_name": "মিরপুর ১০",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4141,
-    "name": "Mirpur 11",
-    "bn_name": "মিরপুর ১১",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4142,
-    "name": "Mirpur 11 Lalmatia",
-    "bn_name": "মিরপুর ১১ লালমাটিয়া",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4143,
-    "name": "Mirpur 12",
-    "bn_name": "মিরপুর ১২",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4144,
-    "name": "Mirpur 12 Block A,C",
-    "bn_name": "মিরপুর ১২ ব্লক এ,সি",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4145,
-    "name": "Mirpur 12 Block-Dhak, B",
-    "bn_name": "মিরপুর ১২ ব্লক-ঢাক, বি",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4146,
-    "name": "Mirpur 12 Block Ta",
-    "bn_name": "মিরপুর ১২ ব্লক টা",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4147,
-    "name": "Mirpur 13",
-    "bn_name": "মিরপুর ১৩",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4148,
-    "name": "Mirpur 14",
-    "bn_name": "মিরপুর ১৪",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4149,
-    "name": "Mirpur 1 Market Area",
-    "bn_name": "মিরপুর ১ মার্কেট এলাকা",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4150,
-    "name": "Mirpur 2",
-    "bn_name": "মিরপুর ২",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4151,
-    "name": "Mirpur 6",
-    "bn_name": "মিরপুর ৬",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4152,
-    "name": "Mirpur 6 (Block C)",
-    "bn_name": "মিরপুর ৬ (ব্লক সি)",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4153,
-    "name": "Mirpur 7",
-    "bn_name": "মিরপুর ৭",
+    "name": "Mirpur",
+    "bn_name": "মিরপুর",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -4748,15 +4478,6 @@
     "id": 4154,
     "name": "Mirpur Cantonment",
     "bn_name": "মিরপুর ক্যান্টনমেন্ট",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4155,
-    "name": "Mirpur Cantonment (Ave new 3 )",
-    "bn_name": "মিরপুর ক্যান্টনমেন্ট (এভ নিউ ৩ )",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -4883,15 +4604,6 @@
     "id": 4170,
     "name": "Nakhalpara",
     "bn_name": "নাখালপাড়া",
-    "district_id": "41",
-    "city_corporation": "null",
-    "city_corp_tag": "null",
-    "ward": "null"
-  },
-  {
-    "id": 4171,
-    "name": "Nakhal para",
-    "bn_name": "নাখাল পাড়া",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -5277,8 +4989,8 @@
   },
   {
     "id": 4214,
-    "name": "Shagufta Block-D",
-    "bn_name": "শাগুফতা ব্লক-ডি",
+    "name": "Shagufta",
+    "bn_name": "শাগুফতা",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
@@ -5574,8 +5286,8 @@
   },
   {
     "id": 4247,
-    "name": "Uttara Sector 9",
-    "bn_name": "উত্তরা সেক্টর ৯",
+    "name": "Uttara",
+    "bn_name": "উত্তরা",
     "district_id": "41",
     "city_corporation": "null",
     "city_corp_tag": "null",
