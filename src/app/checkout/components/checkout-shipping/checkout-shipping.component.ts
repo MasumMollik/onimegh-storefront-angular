@@ -7,13 +7,14 @@ import {
     ViewChild,
 } from "@angular/core";
 import {
+    FormGroup,
     UntypedFormBuilder,
     UntypedFormGroup,
     Validators,
 } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Observable, of, Subject } from "rxjs";
-import { map, mergeMap, switchMap, takeUntil, tap } from "rxjs/operators";
+import {map, mergeMap, switchMap, take, takeUntil, tap} from "rxjs/operators";
 
 import {
     AddressFragment,
@@ -81,6 +82,15 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
     shippingMethodId: string | undefined;
     contactForm: UntypedFormGroup;
     private destroy$ = new Subject<void>();
+    private eligibleShippingMethods: {
+        __typename?: "ShippingMethodQuote";
+        id: string;
+        name: string;
+        description: string;
+        price: any;
+        priceWithTax: any;
+        metadata?: any;
+    }[] = [];
 
     constructor(
         private dataService: DataService,
@@ -126,6 +136,9 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
             ),
             map((data) => data.eligibleShippingMethods),
         );
+        this.eligibleShippingMethods$.subscribe(value => {
+            this.eligibleShippingMethods = value;
+        });
 
         shippingData$
             .pipe(
@@ -195,8 +208,37 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
     }
 
     onAddressFormBlur(addressForm: UntypedFormGroup) {
+        this.setShippingMethodByDhakaRange(addressForm);
+
         if (addressForm.dirty && addressForm.valid) {
             this.setShippingAddress(addressForm.value);
+            // city:"6"
+            // phoneNumber:"01783483660"
+            // postalCode:"1234"
+            // province:"59"
+            // streetLine1:"Dhaka"
+            // streetLine2:"123"
+        }
+    }
+
+    private setShippingMethodByDhakaRange(addressForm: FormGroup) {
+        if (addressForm.value.city === '47') {
+            const shippingZonesDhakaSub = ['4255', '366', '4098', '4211', '369', '4094', '4115', '4116', '368', '4066', '4211', '4212'];
+            if (addressForm.value.province && shippingZonesDhakaSub.includes(addressForm.value.province)) {
+                this.findAndSetShippingMethod('Dhaka Sub-urban');
+            } else {
+                this.findAndSetShippingMethod('Inside Dhaka');
+            }
+        } else {
+            this.findAndSetShippingMethod('Outside Dhaka');
+        }
+        console.log(addressForm.value);
+    }
+
+    private findAndSetShippingMethod(methodName: string) {
+        const shippingMethodInsideDhaka = this.eligibleShippingMethods.find(m => m.name === methodName);
+        if (shippingMethodInsideDhaka) {
+            this.setShippingMethod(shippingMethodInsideDhaka.id);
         }
     }
 
@@ -219,36 +261,40 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
     }
 
     proceedToPayment() {
-        const shippingMethodId = this.shippingMethodId;
-        if (shippingMethodId) {
-            this.stateService
-                .select((state) => state.signedIn)
-                .pipe(
-                    mergeMap((signedIn) =>
-                        !signedIn
-                            ? this.setCustomerForOrder() || of({})
-                            : of({}),
-                    ),
-                    mergeMap(() =>
-                        this.dataService.mutate<
-                            SetShippingMethodMutation,
-                            SetShippingMethodMutationVariables
-                        >(SET_SHIPPING_METHOD, {
-                            id: shippingMethodId,
-                        }),
-                    ),
-                    mergeMap(() =>
-                        this.dataService.mutate<TransitionToArrangingPaymentMutation>(
-                            TRANSITION_TO_ARRANGING_PAYMENT,
-                        ),
-                    ),
-                )
-                .subscribe((data) => {
-                    this.router.navigate(["../payment"], {
-                        relativeTo: this.route,
-                    });
-                });
-        }
+        this.eligibleShippingMethods$.pipe(take(1))
+            .subscribe((eligibleShippingMethods) => {
+                console.log(eligibleShippingMethods);
+                const shippingMethodId = this.shippingMethodId;
+                if (shippingMethodId) {
+                    this.stateService
+                        .select((state) => state.signedIn)
+                        .pipe(
+                            mergeMap((signedIn) =>
+                                !signedIn
+                                    ? this.setCustomerForOrder() || of({})
+                                    : of({}),
+                            ),
+                            mergeMap(() =>
+                                this.dataService.mutate<
+                                    SetShippingMethodMutation,
+                                    SetShippingMethodMutationVariables
+                                >(SET_SHIPPING_METHOD, {
+                                    id: shippingMethodId,
+                                }),
+                            ),
+                            mergeMap(() =>
+                                this.dataService.mutate<TransitionToArrangingPaymentMutation>(
+                                    TRANSITION_TO_ARRANGING_PAYMENT,
+                                ),
+                            ),
+                        )
+                        .subscribe((data) => {
+                            this.router.navigate(["../payment"], {
+                                relativeTo: this.route,
+                            });
+                        });
+                }
+            });
     }
 
     getId(method: { id: string }) {

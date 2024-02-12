@@ -16,9 +16,9 @@ import { ADD_PAYMENT, GET_ELIGIBLE_PAYMENT_METHODS } from './checkout-payment.gr
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CheckoutPaymentComponent implements OnInit {
-    cardNumber: string;
-    expMonth: number;
-    expYear: number;
+    cardNumber = '123';
+    expMonth = 12;
+    expYear = 2033;
     paymentMethods$: Observable<GetEligiblePaymentMethodsQuery['eligiblePaymentMethods']>
     paymentErrorMessage: string | undefined;
 

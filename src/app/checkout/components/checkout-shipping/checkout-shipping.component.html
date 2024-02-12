@@ -114,6 +114,32 @@
 <!--        </div>-->
 <!--    </vsf-radio-card-fieldset>-->
 <!--</div>-->
+<div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+    <div class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
+        <ng-container *ngFor="let method of eligibleShippingMethods$ | async">
+            <div class="applied-shipping-method" *ngIf="method.id===shippingMethodId">
+                <label
+                    class="block text-sm font-medium text-gray-800"
+                    htmlFor="lastName"
+                >
+                    Shipping Charge
+                </label>
+
+                <span class="block text-sm font-medium text-gray-900">
+                    {{ method.name }}
+                </span>
+
+                <span [innerHTML]="method.description" class="mt-6 text-sm text-gray-400">
+                </span>
+
+                <span class="mt-6 text-sm font-medium text-gray-900">
+                    {{ method.priceWithTax | formatPrice }}
+                </span>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
 <button (click)="proceedToPayment()"
         [disabled]="addressForm.valid"
         class="btn-primary mt-6 w-full space-x-2">
