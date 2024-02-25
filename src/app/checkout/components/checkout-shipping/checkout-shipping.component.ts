@@ -258,9 +258,10 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
 
     setShippingMethod(id: string) {
         this.shippingMethodId = id;
+        this.proceedToPayment(false);
     }
 
-    proceedToPayment() {
+    proceedToPayment(navigate = true) {
         this.eligibleShippingMethods$.pipe(take(1))
             .subscribe((eligibleShippingMethods) => {
                 console.log(eligibleShippingMethods);
@@ -282,16 +283,21 @@ export class CheckoutShippingComponent implements OnInit, OnDestroy {
                                     id: shippingMethodId,
                                 }),
                             ),
-                            mergeMap(() =>
-                                this.dataService.mutate<TransitionToArrangingPaymentMutation>(
-                                    TRANSITION_TO_ARRANGING_PAYMENT,
-                                ),
+                            mergeMap((data) => {
+                                    if (navigate) {
+                                        return this.dataService.mutate<TransitionToArrangingPaymentMutation>(
+                                            TRANSITION_TO_ARRANGING_PAYMENT,
+                                        );
+                                    } else return of(data);
+                                }
                             ),
                         )
                         .subscribe((data) => {
-                            this.router.navigate(["../payment"], {
-                                relativeTo: this.route,
-                            });
+                            if (navigate) {
+                                this.router.navigate(["../payment"], {
+                                    relativeTo: this.route,
+                                });
+                            }
                         });
                 }
             });

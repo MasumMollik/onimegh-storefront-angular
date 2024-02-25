@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import {map, take, tap} from 'rxjs/operators';
 
 import { AddPaymentMutation, AddPaymentMutationVariables, GetEligiblePaymentMethodsQuery } from '../../../common/generated-types';
 import { DataService } from '../../../core/providers/data/data.service';
@@ -19,7 +19,7 @@ export class CheckoutPaymentComponent implements OnInit {
     cardNumber = '123';
     expMonth = 12;
     expYear = 2033;
-    paymentMethods$: Observable<GetEligiblePaymentMethodsQuery['eligiblePaymentMethods']>
+    paymentMethods$: Observable<GetEligiblePaymentMethodsQuery['eligiblePaymentMethods']>;
     paymentErrorMessage: string | undefined;
 
     constructor(private dataService: DataService,
@@ -30,6 +30,12 @@ export class CheckoutPaymentComponent implements OnInit {
     ngOnInit() {
         this.paymentMethods$ = this.dataService.query<GetEligiblePaymentMethodsQuery>(GET_ELIGIBLE_PAYMENT_METHODS)
             .pipe(map(res => res.eligiblePaymentMethods));
+        this.paymentMethods$.pipe(
+            take(1),
+            tap({next: (methods) => {
+                this.completeOrder(methods[0].code);
+                }})
+        ).subscribe();
     }
 
     getMonths(): number[] {
